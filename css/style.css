@@ -8,3 +8,36 @@
   height: 100vh;
   background: linear-gradient(to bottom,  #2F9688 15%,  #D7DBD6 15%,  #D7DBD6);
 }
+
+.my_container{
+  margin: 0 auto;
+  max-width: 1100px;
+  background-color: red;
+  height: 100%;
+}
+
+img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+i{
+  color: #adadad;
+  margin: 0 8px;
+}
+
+.box-left{
+  height: 100%;
+  background-color: blue;
+}
+
+.box-right{
+  height: 100%;
+  background-color: blueviolet;
+}
+
+.user{
+  height: 75px;
+  background-color: #eaeaea;
+}
+
