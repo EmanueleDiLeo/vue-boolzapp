@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big_container{
+  height: 100vh;
+  background: linear-gradient(to bottom,  #2F9688 15%,  #D7DBD6 15%,  #D7DBD6);
+}
