@@ -28,7 +28,7 @@ i{
 
 .box-left{
   height: 100%;
-  background-color: blue;
+  background-color: white;
 }
 
 .box-right{
@@ -88,3 +88,16 @@ i{
   text-align: center;
 }
 
+.contact{
+  height: 80px;
+}
+
+.contacts{
+  height: calc(100% - 210px);
+  overflow-y:scroll;
+  font-size: 0.9rem;
+}
+
+.color-grey{
+  color: #607d91;
+}
