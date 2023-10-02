@@ -16,10 +16,6 @@
   height: 100%;
 }
 
-img{
-  width: 50px;
-  border-radius: 50%;
-}
 
 i{
   color: #adadad;
@@ -29,6 +25,11 @@ i{
 .box-left{
   height: 100%;
   background-color: white;
+}
+
+.box-left img{
+  width: 50px;
+  border-radius: 50%;
 }
 
 .box-right{
@@ -93,11 +94,39 @@ i{
 }
 
 .contacts{
-  height: calc(100% - 210px);
+  height: calc(100% - 204px);
   overflow-y:scroll;
-  font-size: 0.9rem;
 }
 
-.color-grey{
+.size{
+  font-size: 0.8rem;
   color: #607d91;
+}
+
+
+.box-right img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.box-right .user{
+  border-left: 1px solid #adadad;
+}
+
+.chat{
+  height: calc(100% - 145px);
+  background-image: url(../img/mine.jpg);
+}
+
+.box-bot-chat{
+  height: 75px;
+  background-color: #eaeaea;
+}
+
+.box-bot-chat i{
+  font-size: 1.5rem;
+}
+
+.box-fa{
+  width: 100px;
 }

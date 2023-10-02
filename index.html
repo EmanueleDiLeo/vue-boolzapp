@@ -83,10 +83,10 @@
                 <img :src="contact.avatar" :alt="contact.name" class="mx-3 ">
                 <div class="d-flex flex-column ">
                   <span><strong>{{contact.name}}</strong></span>
-                  <span class="color-grey">Ultimo messaggio inviato</span>
+                  <span class="size">Ultimo messaggio inviato</span>
                 </div>
               </div>
-              <span class="mt-3 me-2 color-grey">12:00</span>
+              <span class="mt-3 me-2 size">12:00</span>
             </div>
             <!-- START CONTACT -->
 
@@ -99,8 +99,48 @@
         <!-- START BOX RIGHT -->
         <div class="box-right col-7">
 
+          <!-- START USER CHAT -->
+          <div class="user d-flex align-items-center justify-content-between px-3">
+            <div class="user-name d-flex align-items-center">
+              <img src="img/avatar_1.jpg" alt="test">
+              <div class="d-flex flex-column ">
+                <span><strong>Michele</strong></span>
+                <span class="size">Ultimo messaggio inviato</span>
+              </div>
+            </div>
+            <div class="user-menu d-flex ">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-paperclip"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+          <!-- END USER CHAT -->
+
+          <!-- START CHAT -->
+          <div class="chat">
+          </div>
+          <!-- END CHAT -->
+
+          <!-- START BOX-BOT-CHAT -->
+          <div class="box-bot-chat d-flex align-items-center justify-content-between ">
+
+            <div class="box-fa d-flex justify-content-center">
+              <i class="fa-regular fa-face-smile"></i>
+            </div>
+            
+
+            <input class="form-control form-control-lg" type="text" placeholder="Scrivi un messaggio" aria-label=".form-control-lg example">
+
+
+            <div class="box-fa d-flex justify-content-center">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+
+          </div>
+          <!-- END BOX-BOT-CHAT -->
+
         </div>
-        <!-- START BOX RIGHT -->
+        <!-- END BOX RIGHT -->
 
       </div>
       <!-- START MY CONTAINER -->

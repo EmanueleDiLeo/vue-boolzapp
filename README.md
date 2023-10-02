@@ -15,4 +15,6 @@ Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente r
 
 1. creare la struttura in html con un div che contiene tutto e un altro div che contiene "l'app" e altri due div interni
 1. creare la lista su js dei messaggi
-1. sistemare il css
+1. nel lato sinistro creo i div per (utente, notifiche, input e per i contatti) 
+1. nei contatti faccio un for in
+1. nel lato sinistro creo la la chat, input chat e l'utente della conversazione
