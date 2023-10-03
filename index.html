@@ -17,6 +17,9 @@
   <!-- Vue -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+  <!-- Luxon -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+
   <!-- My style -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -147,7 +150,6 @@
             aria-label=".form-control-lg example"
             v-model.trim="newMessage"
             @keyup.enter = "addMessage">
-
 
             <div class="box-fa d-flex justify-content-center">
               <i class="fa-solid fa-microphone"></i>

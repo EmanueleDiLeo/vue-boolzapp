@@ -1,3 +1,4 @@
+const dt = luxon.DateTime;
 const {createApp} = Vue;
 
 createApp({
@@ -170,6 +171,7 @@ createApp({
       ],
       counter : 0,
       newMessage: "",
+
     }
   },
 
@@ -184,15 +186,29 @@ createApp({
 
     addMessage(){
       const messageOb = {
-        date: '10/01/2022 15:51:00',
+        date: dt.now().setLocale("it").toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
         message: this.newMessage,
         status: 'sent',
       };
       if(this.newMessage !== ""){
         this.contacts[this.counter].messages.push(messageOb);
+        this.answerIA();
       }
       this.newMessage = "";
-    }
+    },
+
+    answerIA(){
+      setTimeout( () => {
+        const answer = {
+          date: dt.now().setLocale("it").toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
+          message: 'ok',
+          status: 'received'
+        };
+        return this.contacts[this.counter].messages.push(answer);
+      },1000);
+      
+    },
+
   },
 
   computed:{
