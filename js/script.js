@@ -171,6 +171,7 @@ createApp({
       ],
       counter : 0,
       newMessage: "",
+      search: "",
 
     }
   },
@@ -207,6 +208,17 @@ createApp({
         return this.contacts[this.counter].messages.push(answer);
       },1000);
       
+    },
+
+    searchContact(){
+      this.contacts.forEach(contact => {
+        if(!(contact.name).toLowerCase().includes(this.search.toLowerCase())){
+          contact.visible = false;
+        }
+        else{
+          contact.visible = true;
+        }
+      });
     },
 
   },
