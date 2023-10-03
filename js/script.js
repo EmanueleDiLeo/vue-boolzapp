@@ -169,15 +169,29 @@ createApp({
         }
       ],
       counter : 0,
+      newMessage: "",
     }
   },
 
   methods:{
+
     time(date){
       const array = date.split(" ");
       const arrayTime = array[1].split(":");
       const time = arrayTime[0] + ":" + arrayTime[1];
       return time;
+    },
+
+    addMessage(){
+      const messageOb = {
+        date: '10/01/2022 15:51:00',
+        message: this.newMessage,
+        status: 'sent',
+      };
+      if(this.newMessage !== ""){
+        this.contacts[this.counter].messages.push(messageOb);
+      }
+      this.newMessage = "";
     }
   },
 

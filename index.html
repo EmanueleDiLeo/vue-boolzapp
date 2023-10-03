@@ -140,7 +140,13 @@
               <i class="fa-regular fa-face-smile"></i>
             </div>
 
-            <input class="form-control form-control-lg" type="text" placeholder="Scrivi un messaggio" aria-label=".form-control-lg example">
+            <input 
+            class="form-control form-control-lg" 
+            type="text" 
+            placeholder="Scrivi un messaggio" 
+            aria-label=".form-control-lg example"
+            v-model.trim="newMessage"
+            @keyup.enter = "addMessage">
 
 
             <div class="box-fa d-flex justify-content-center">
