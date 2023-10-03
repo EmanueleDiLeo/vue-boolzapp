@@ -137,6 +137,25 @@ div.active{
   height: calc(100% - 145px);
   background-image: url(../img/mine.jpg);
   overflow-y:scroll;
+  padding: 30px
+}
+
+.sent{
+  width: 270px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #d5f9ba;
+  float: right;
+  border-radius: 15px;
+}
+
+.received{
+  width: 270px;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  float: left;
+  border-radius: 15px;
 }
 
 /* ********************************  BOT-CHAT */

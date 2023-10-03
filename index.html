@@ -104,9 +104,9 @@
           <!-- START USER CHAT -->
           <div class="user d-flex align-items-center justify-content-between px-3">
             <div class="user-name d-flex align-items-center">
-              <img src="img/avatar_1.jpg" alt="test">
+              <img :src="contacts[counter].avatar" alt="test">
               <div class="d-flex flex-column ">
-                <span><strong>Michele</strong></span>
+                <span><strong>{{contacts[counter].name}}</strong></span>
                 <span class="size">Ultimo accesso oggi alle 12:00</span>
               </div>
             </div>
@@ -120,6 +120,14 @@
 
           <!-- START CHAT -->
           <div class="chat">
+            <div v-for="message in contacts[counter].messages" class="clearfix">
+              <div v-if="message.status === 'sent'" class="sent">
+                <p>{{message.message}}</p>
+              </div>
+              <div v-else class="received">
+                <span>{{message.message}}</span>
+              </div>
+            </div>
           </div>
           <!-- END CHAT -->
 
@@ -129,7 +137,6 @@
             <div class="box-fa d-flex justify-content-center">
               <i class="fa-regular fa-face-smile"></i>
             </div>
-            
 
             <input class="form-control form-control-lg" type="text" placeholder="Scrivi un messaggio" aria-label=".form-control-lg example">
 
