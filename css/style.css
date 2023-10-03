@@ -1,8 +1,16 @@
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+i{
+  color: #adadad;
+  margin: 0 8px;
+}
+
+/* **************************************** CONTAINER */
 
 .big_container{
   height: 100vh;
@@ -16,11 +24,7 @@
   height: 100%;
 }
 
-
-i{
-  color: #adadad;
-  margin: 0 8px;
-}
+/* ************************************** BOX LEFT */
 
 .box-left{
   height: 100%;
@@ -32,15 +36,14 @@ i{
   border-radius: 50%;
 }
 
-.box-right{
-  height: 100%;
-  background-color: blueviolet;
-}
+/* *********************************** USER */
 
 .user{
   height: 70px;
   background-color: #eaeaea;
 }
+
+/* ******************************  NOTIFICATION */
 
 .notification{
   background-color: #8edafc;
@@ -67,6 +70,8 @@ i{
  color:#607d91;
 }
 
+/* ******************************  SEARCH */
+
 .search{
   height: 54px;
   background-color: #fafafa;
@@ -89,6 +94,8 @@ i{
   text-align: center;
 }
 
+/* ********************************* CONTACTS */
+
 .contact{
   height: 80px;
 }
@@ -96,6 +103,7 @@ i{
 .contacts{
   height: calc(100% - 204px);
   overflow-y:scroll;
+  cursor: pointer;
 }
 
 .size{
@@ -103,6 +111,16 @@ i{
   color: #607d91;
 }
 
+div.active{
+  background-color: #e9ebeb;
+}
+
+/* ***********************************  BOX RIGHT */
+
+.box-right{
+  height: 100%;
+  background-color: blueviolet;
+}
 
 .box-right img{
   width: 40px;
@@ -113,10 +131,15 @@ i{
   border-left: 1px solid #adadad;
 }
 
+/************************************  CHAT  */
+
 .chat{
   height: calc(100% - 145px);
   background-image: url(../img/mine.jpg);
+  overflow-y:scroll;
 }
+
+/* ********************************  BOT-CHAT */
 
 .box-bot-chat{
   height: 75px;

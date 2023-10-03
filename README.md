@@ -18,3 +18,4 @@ Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente r
 1. nel lato sinistro creo i div per (utente, notifiche, input e per i contatti) 
 1. nei contatti faccio un for in
 1. nel lato sinistro creo la la chat, input chat e l'utente della conversazione
+1. aggiungo la classe active al click del contatto

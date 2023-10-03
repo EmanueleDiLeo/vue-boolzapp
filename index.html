@@ -50,7 +50,7 @@
           </div>
           <!-- END USER -->
 
-          <!-- START notification -->
+          <!-- START NOTIFICATION -->
           <div class="notification d-flex align-items-center ps-4">
             <div class="bell d-flex justify-content-center align-items-center">
               <i class="fa-solid fa-bell-slash"></i>
@@ -60,7 +60,7 @@
               <a href="#">Attiva notifica desktop</a>
             </div>
           </div>
-         <!-- END notification -->
+         <!-- END NOTIFICATION -->
 
          <!-- START SEARCH -->
           <div class="search p-2">
@@ -78,7 +78,9 @@
             <div 
               v-for="(contact,index) in contacts" 
               class="d-flex justify-content-between  
-              contact" >
+              contact" 
+              @click = " counter = index "
+              :class = "{'active': index === counter}">
               <div class="d-flex align-items-center">
                 <img :src="contact.avatar" :alt="contact.name" class="mx-3 ">
                 <div class="d-flex flex-column ">
@@ -105,7 +107,7 @@
               <img src="img/avatar_1.jpg" alt="test">
               <div class="d-flex flex-column ">
                 <span><strong>Michele</strong></span>
-                <span class="size">Ultimo messaggio inviato</span>
+                <span class="size">Ultimo accesso oggi alle 12:00</span>
               </div>
             </div>
             <div class="user-menu d-flex ">
