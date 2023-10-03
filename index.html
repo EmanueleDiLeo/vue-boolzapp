@@ -105,7 +105,7 @@
           <div class="user d-flex align-items-center justify-content-between px-3">
             <div class="user-name d-flex align-items-center">
               <img :src="contacts[counter].avatar" alt="test">
-              <div class="d-flex flex-column ">
+              <div class="d-flex flex-column ms-2">
                 <span><strong>{{contacts[counter].name}}</strong></span>
                 <span class="size">Ultimo accesso oggi alle 12:00</span>
               </div>
@@ -123,9 +123,11 @@
             <div v-for="message in contacts[counter].messages" class="clearfix">
               <div v-if="message.status === 'sent'" class="sent">
                 <p>{{message.message}}</p>
+                <span class="size">{{time(message.date)}}</span>
               </div>
-              <div v-else class="received">
-                <span>{{message.message}}</span>
+              <div v-else class="received clearfix">
+                <p>{{message.message}}</p>
+                <span class="size">{{time(message.date)}}</span>
               </div>
             </div>
           </div>

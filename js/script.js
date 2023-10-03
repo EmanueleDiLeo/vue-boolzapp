@@ -173,7 +173,16 @@ createApp({
   },
 
   methods:{
-
+    time(date){
+      const array = date.split(" ");
+      const arrayTime = array[1].split(":");
+      const time = arrayTime[0] + ":" + arrayTime[1];
+      return time;
+    }
   },
+
+  computed:{
+
+  }
 
 }).mount("#app");

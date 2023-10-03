@@ -10,6 +10,10 @@ i{
   margin: 0 8px;
 }
 
+p{
+  margin: 0;
+}
+
 /* **************************************** CONTAINER */
 
 .big_container{
@@ -62,10 +66,6 @@ i{
   font-size: 1.2rem;
 }
 
-.notification-text p{
-  margin: 0;
-}
-
 .notification-text a{
  color:#607d91;
 }
@@ -107,7 +107,7 @@ i{
 }
 
 .size{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #607d91;
 }
 
@@ -156,6 +156,10 @@ div.active{
   background-color: white;
   float: left;
   border-radius: 15px;
+}
+
+.chat span.size{
+  float: right;
 }
 
 /* ********************************  BOT-CHAT */

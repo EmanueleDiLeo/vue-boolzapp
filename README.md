@@ -26,3 +26,4 @@ Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permett
 1. aggiungo la classe active al click del contatto
 1. cambio immagine e nome dell'utente della chat con il counter
 1. faccio un ciclo dei messaggi in chat e uso un if per mettere a destra i sent e sinistra gli altri
+1. creo un metodo thime per prendere solo ora e minuti
